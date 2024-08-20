@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Ondas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Avaliação de Ondas - Gabriel Medina</h1>
+        <form id="avaliacao-form">
+            <div class="onda" id="onda1">
+                <label for="descricao1">Onda Irada de 50 Metros:</label>
+                <input type="text" id="descricao1" name="descricao1" placeholder="Descreva a onda...">
+                <label for="nota1">Nota:</label>
+                <input type="number" id="nota1" name="nota1" min="0" max="10" step="1" placeholder="0, 1, 5 ou 10">
+            </div>
+
+            <div class="onda" id="onda2">
+                <label for="descricao2">Onda Mediana de 30 Metros:</label>
+                <input type="text" id="descricao2" name="descricao2" placeholder="Descreva a onda...">
+                <label for="nota2">Nota:</label>
+                <input type="number" id="nota2" name="nota2" min="0" max="10" step="1" placeholder="0, 1, 5 ou 10">
+            </div>
+
+            <div class="onda" id="onda3">
+                <label for="descricao3">Onda Boa de 39 Metros:</label>
+                <input type="text" id="descricao3" name="descricao3" placeholder="Descreva a onda...">
+                <label for="nota3">Nota:</label>
+                <input type="number" id="nota3" name="nota3" min="0" max="10" step="1" placeholder="0, 1, 5 ou 10">
+            </div>
+
+            <div class="onda" id="onda4">
+                <label for="descricao4">Onda Incrível de 45 Metros:</label>
+                <input type="text" id="descricao4" name="descricao4" placeholder="Descreva a onda...">
+                <label for="nota4">Nota:</label>
+                <input type="number" id="nota4" name="nota4" min="0" max="10" step="1" placeholder="0, 1, 5 ou 10">
+            </div>
+
+            <div class="onda" id="onda5">
+                <label for="descricao5">Onda Final de 60 Metros:</label>
+                <input type="text" id="descricao5" name="descricao5" placeholder="Descreva a onda...">
+                <label for="nota5">Nota:</label>
+                <input type="number" id="nota5" name="nota5" min="0" max="10" step="1" placeholder="0, 1, 5 ou 10">
+            </div>
+
+            <button type="submit">Enviar Avaliação</button>
+        </form>
+
+        <div id="resultados">
+            <h2>Resultados das Ondas:</h2>
+            <ul id="resultados-lista"></ul>
+            <p id="soma-notas"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
